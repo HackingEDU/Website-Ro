@@ -501,6 +501,20 @@ a.san-mateo:hover{
   background-color:#eeeeee;
 }
 
+.faq-list button {
+  border-style: none;
+  padding: 0px;
+  color: #0FA0CE;
+}
+
+.faq {
+  display: none;
+}
+
+.faq.active {
+  display: block;
+}
+
 /*Training Day Section*/
 
 #training-day {

@@ -37,14 +37,13 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
   return false;
 });
 
-
-$("#nav-press-butt").click(function() {
-  window.open("/HackingEDU_PressKit.pdf", "_blank");
+$("#nav-apply-butt").click(function() {
+  window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
   return true;
 });
 
-$("#nav-apply-butt").click(function() {
-  window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
+$('#nav-press-butt').click(function() {
+  window.open('https://drive.google.com/file/d/0BzI2Lz_qv89jeHZnVHQ3ZjlrUlE/view', '_blank');
   return true;
 });
 
@@ -52,5 +51,14 @@ $("#nav-apply-butt").click(function() {
 $('#header').on('click', function(){
   if ($('.navbar-toggle').css('display') === 'none') return false; //Check if mobile view
   $('#header').hasClass('in') ? $(".navbar-collapse").collapse('hide') : $(".navbar-collapse").collapse('show');
+});
+
+// FAQ switcher
+$('.faq-list button').click(function(e) {
+  var faqToDisplay = '.' + e.target.dataset.show;
+  $('.faq.active').css('display', 'none');
+  $('.faq.active').removeClass('active');
+  $(faqToDisplay).fadeIn();
+  $(faqToDisplay).addClass('active');
 });
 
