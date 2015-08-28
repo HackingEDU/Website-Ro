@@ -39,7 +39,6 @@ $('a[href*=#]:not([href=#])').click(function(ev) {
 
 $("#nav-apply-butt").click(function() {
   window.open("https://hackingedu.typeform.com/to/ynFajD", "_blank");
-  return true;
 });
 
 $('#nav-press-butt').click(function() {
