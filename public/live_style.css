@@ -1,5 +1,6 @@
 .main {
     height: 100%;
+    width: 100%;
     background: url("assets/img/Hackathon.jpg");
     background-size: cover;
 }
@@ -31,6 +32,11 @@
 .header h1 span {
     font-size: 28px;
 }
+
+.header h1 #timer {
+    color: white;
+    font-size: 36px;
+}
             
 .header h4 {
     font-size: 25px;
@@ -38,16 +44,40 @@
     font-family: Lato;
     text-align: center;
 }
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    background-color: dimgray;
+    opacity: 0.8;
+}
+
+.nav a {
+    display: block;
+    float: right;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.nav a p {
+    padding-top: 6px;
+    color: white;
+    font-family: Avenir;
+    font-size: 16px;
+}
             
 /*Schedule Styling*/
             
 .schedule {
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: #f3f3f3;
+    
 }
             
 .schedule h1 {
-    padding-top: 35px;
+    padding-top: 25px;
     text-align: center;
     font-size: 40px;
     font-weight: 200;
@@ -103,8 +133,8 @@
 /*Transportation*/
             
 .shuttles {
-    width: 100%;
     background-color: #DEE5EA;
+    width: 100%;
 }
             
 .shuttles h1 {
@@ -159,6 +189,12 @@
 #faq {
     background-color: #eeeeee;
 }
+
+#faq h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
             
 #nice strong {
     font-size: 16px;
@@ -171,8 +207,140 @@
 #question {
     font-size: 14px;
 }
+
+/*Sponsors*/
+
+#sponsors {
+  background: white;
+  width:   100%;
+  padding: 90px 0;
+}
+
+
+#sponsors .sponsorName{ background: url('http://static.planetminecraft.com/files/resource_media/screenshot/1327/1328800264_minecraft-logo_5843730_lrg.jpg')}
+#sponsors .chegg      { background: url('http://cdn0.hackingedu.co/img/sponsors/chegg.png');      }
+#sponsors .PayPal     { background: url('http://cdn1.hackingedu.co/img/sponsors/paypal.png');     }
+#sponsors .Worldquant { background: url('http://cdn2.hackingedu.co/img/sponsors/worldquant_logo.jpg'); }
+#sponsors .ibm        { background: url('http://cdn3.hackingedu.co/img/sponsors/ibm.jpg');        }
+#sponsors .auto       { background: url('http://cdn4.hackingedu.co/img/sponsors/automattic.jpg'); }
+#sponsors .pebble     { background: url('http://cdn5.hackingedu.co/img/sponsors/pebble.png');     }
+#sponsors .club       { background: url('http://cdn0.hackingedu.co/img/sponsors/club1.png');      }
+#sponsors .leapmotion { background: url('http://cdn1.hackingedu.co/img/sponsors/leapmotion.png'); }
+#sponsors .makeschool { background: url('http://cdn2.hackingedu.co/img/sponsors/makeschool.png'); }
+#sponsors .twilio     { background: url('http://cdn3.hackingedu.co/img/sponsors/twilio.png');     }
+#sponsors .twist      { background: url('http://cdn4.hackingedu.co/img/sponsors/twist.png')       }
+#sponsors .draper     { background: url('http://cdn5.hackingedu.co/img/sponsors/draper.png')      }
+#sponsors .bootstrap  { background: url('http://cdn0.hackingedu.co/img/sponsors/bootstrap.png');  }
+#sponsors .lyft       { background: url('http://cdn1.hackingedu.co/img/sponsors/lyft.png')        }
+#sponsors .namecheap  { background: url('http://cdn2.hackingedu.co/img/sponsors/namecheap1.png'); }
+#sponsors .socket     { background: url('http://cdn3.hackingedu.co/img/sponsors/socket.png');     }
+#sponsors .edsurge    { background: url('http://cdn4.hackingedu.co/img/sponsors/edsurge.jpg')     }
+#sponsors .google     { background: url('http://cdn5.hackingedu.co/img/sponsors/google.png')      }
+#sponsors .firebase   { background: url('http://cdn0.hackingedu.co/img/sponsors/firebase.png')    }
+#sponsors .gun        { background: url('http://cdn1.hackingedu.co/img/sponsors/gun.png');        }
+#sponsors .pearlhacks { background: url('http://cdn2.hackingedu.co/img/sponsors/pearlhacks.png')  }
+#sponsors .nwhacks    { background: url('http://cdn3.hackingedu.co/img/sponsors/nwhacks.jpg')     }
+#sponsors .lahacks    { background: url('http://cdn4.hackingedu.co/img/sponsors/lahacks.jpeg')    }
+#sponsors .redbull    { background: url('http://cdn5.hackingedu.co/img/sponsors/redbull.png')     }
+#sponsors .roko       { background: url('http://cdn0.hackingedu.co/img/sponsors/roko.png')        }
+#sponsors .target     { background: url('http://cdn1.hackingedu.co/img/sponsors/target.png')      }
+#sponsors .linode     { background: url('http://cdn2.hackingedu.co/img/sponsors/linode.png')      }
+#sponsors .galvanize  { background: url('http://cdn3.hackingedu.co/img/sponsors/galvanize.png');  }
+#sponsors .edmodo     { background: url('http://cdn4.hackingedu.co/img/sponsors/edmodo.png');     }
+#sponsors .codinghouse{ background: url('http://cdn4.hackingedu.co/img/sponsors/coding_house.png');       }
+#sponsors .thalmiclabs{ background: url('http://cdn5.hackingedu.co/img/sponsors/thalmiclabs.png');        }
+#sponsors .rubicon    { background: url('http://cdn0.hackingedu.co/img/sponsors/RubiconProject.png');     }
+#sponsors .ga         { background: url('http://cdn1.hackingedu.co/img/sponsors/general_assembly.png');   }
+#sponsors .dolby      { background: url('http://cdn3.hackingedu.co/img/sponsors/dolby.png');              }
+#sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
+#sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
+#sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
+
+#sponsors .coursehero { background: url('../img/sponsors/coursehero.png');     }
+#sponsors .moback { background: url('../img/sponsors/moback.png');     }
+#sponsors .roblox { background: url('../img/sponsors/roblox.png');     }
+#sponsors .braintree { background: url('../img/sponsors/braintree.png');     }
+#sponsors .muse { background: url('../img/sponsors/muse.png');     }
+#sponsors .emotiv { background: url('../img/sponsors/Emotiv.png');     }
+#sponsors .ibmbluemix { background: url('../img/sponsors/ibm_bluemix.png');     }
+
+#sponsors .uber { background: url('../img/sponsors/uber.png');     }
+#sponsors .particle { background: url('../img/sponsors/particle.png');     }
+#sponsors .hacksterio { background: url('../img/sponsors/hacksterio.png');     }
+#sponsors .kpcb { background: url('../img/sponsors/kpcb.jpg');     }
+#sponsors .dashdoc { background: url('../img/sponsors/dashdoc.png');     }
+#sponsors .edtechworldtour { background: url('../img/sponsors/edtechworldtour.jpeg');     }
+#sponsors .ostem { background: url('../img/sponsors/ostemlogo.svg');     }
+#sponsors .alienware { background: url('../img/sponsors/alienware.png');     }
+
+#sponsors .bde { background: url('../img/sponsors/bde.png');     }
+#sponsors .devnetwork { background: url('../img/sponsors/dev_network.png');     }
+#sponsors .femresources { background: url('../img/sponsors/femresources.png');     }
+#sponsors .greenathon { background: url('../img/sponsors/greenathon.png');     }
+
+#sponsors .nyntech { background: url('../img/sponsors/nyntech.png');     }
+#sponsors .aboutme { background: url('../img/sponsors/aboutme.png');     }
+#sponsors .oculus { background: url('../img/sponsors/oculus.png');     }
+#sponsors .gsvlabs { background: url('../img/sponsors/gsvlabs.png');     }
+#sponsors .capitalone {background: url(assets/img/sponsors/capitalone.png); }
+
+
+.tier, .tier a {
+  display: inline-block;
+}
+
+#sponsors figure, #sponsors a {
+  margin:  0 20px;
+  padding: 0;
+
+  box-sizing: border-box;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important
+}
+
+.tier {
+  width: 100%;
+  //height: 100%;
+  text-align: center;
+}
+
+#sponsors h2 {
+    text-align: center;
+}
+
+.tier a {
+    display: inline-block;
+  margin: 20px !important;
+}
+
+.tier1 a {
+  min-width: 250px;
+  width:       50%;
+  height:     90px;
+}
+
+.tier2 a {
+  min-width: 250px; /* Split into 2 columns */
+  width:       30%;
+  height:     90px;
+}
+
+.tier3 a {
+  margin: 10px !important; /* Split into 3 columns */
+  min-width: 240px;
+  width:       10%;
+  height:     90px;
+}
+
+.tier4 a {
+  margin: 10px 35px !important; /* Split into 4 columns */
+  min-width: 160px;
+  width:       10%;
+  height:     90px;
+}
             
-@media(max-width: 900px) {
+@media(max-width: 980px) {
                 
     #nice {
         width: 85%;
@@ -201,4 +369,49 @@
     .column2 h5 {
         font-size: 11px;
     }
+    
+    .nav {
+        //background-color: red;
+        width: 100%;
+        height: 5%;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 0 auto;
+        padding-right: 15px;
+        text-decoration: none;
+    }
+
+    .nav a p {
+        font-size: 16px;
+        color: white;
+        font-family: Avenir;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    
+    .header h1 {
+        padding-top: 150px;
+    }
 }
+
+@media (max-width: 520px) {
+    .column1 h5 {
+        font-size: 16px;
+    }
+    
+    .column2 h5 {
+        font-size: 16px;
+    }
+    
+    .awesome {
+        display: inline-block;
+        width:100%;
+    }
+    
+}
+
+
+

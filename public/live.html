@@ -24,7 +24,8 @@
         <meta property="og:title" content="HackingEDU | World's Largest Education Hackathon" />
 
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!--
+        <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="live_style.css" type="text/css">
         <link href="http://cdn3.hackingedu.co/css/normalize.css" rel="stylesheet">
@@ -38,10 +39,19 @@
     <body>
         <div class="container-fluid main" >
             <div class="header">
-                <h1 id="timer">HackingEDU <br /> <span>in</span> <br /> [counter goes here ... ]</h1>
+                <div class="nav">
+                    <a href="#linkSponsor"><p>Sponsors</p></a>
+                    <a href="#linkFAQ"><p>FAQ</p></a>
+                    <a href="#linkTransport"><p>Transportation</p></a>
+                    <a href="#linkSchedule"><p>Schedule</p></a>
+                    <a href="#"><p>Home</p></a>
+                </div>
+                <h1 >HackingEDU <br /> <span>in</span> <br /> <span id="timer"></span></h1>
                 <h4>San Mateo Event Center <br /> October 23-25, 2015</h4>
+                <div id="helloWorldPeople"></div>
             </div>
             <div class="schedule">
+                    <a name="linkSchedule"></a>
                     <h1>Schedule</h1>
                     <div class="awesome">
                     <h4>Friday, October 23</h4>
@@ -304,11 +314,13 @@
                     </div>
             </div> <!-- end of 'schedule' -->
             <div class="shuttles">
+                <a name="linkTransport"></a>
                 <h1>Transportation</h1>
                 <h6>Transportation will be provided from specified locations all across California. Check the information below to see how you can attend HackingEDU.</h6>
-                <div class="transportInfo">Info coming soon</div>
+                <div class="transportInfo">Shuttle Data will be here ...</div>
             </div> <!-- End of 'shuttles' -->
             <section id="faq" class="spaced-container">
+                <a name="linkFAQ"></a>
       <div class="container">
         <div class="row faq">
           <h2 class="text-center thin-header">Frequently Asked Questions</h2>
@@ -371,16 +383,76 @@
       </div>
         </section> <!-- end of 'faq' -->
             
+        <section id="sponsors">
+              <div class="container text-center">
+                <h2 class="text-center sponsor thin-header">Sponsors</h2>
+                <br/>
+                <div class="tier tier1">
+                  <a href="http://chegg.com"  data-mode="2" target="_blank" class="chegg"></a>
+                </div><br />
+
+                <div class="tier tier2">
+                  <a href="http://ibm.com/cloud"  data-mode="2" target="_blank" class="ibm"></a>
+                  <a href="http://automattic.com" data-mode="2" target="_blank" class="auto"></a>
+                </div><br />
+
+                <div class="tier tier3">
+                    <a href="https://www.capitalone.com" data-mode="2" target="_blank" class="capitalone"></a>                              <a href="http://paypal.com" data-mode="2" target="_blank" class="PayPal"></a>
+                    <a href="https://www.target.com" data-mode="2" target="_blank" class="target"></a>
+                 
+                </div>
+                <div class="tier tier4">
+                  <a href="https://www.worldquant.com" data-mode="2" target="_blank" class="Worldquant"></a>
+                  <a href="http://www.dolby.com" data-mode="2" target="_blank" class="dolby"></a>
+                  <a href="http://developer.getpebble.com" data-mode="2" target="_blank" class="pebble"></a>
+                  <a href="https://www.linode.com/" data-mode="2" target="_blank" class="linode"></a>
+                  <a href="http://nic.club" data-mode="2" target="_blank" class="club"></a>
+                  <a href="http://namecheap.com" data-mode="2" target="_blank" class="namecheap"></a>
+                  <a href="https://generalassemb.ly/" data-mode="2" target="_blank" class="ga"></a>
+                  <a href="http://twilio.com" data-mode="2" target="_blank" class="twilio"></a>
+                  <a href="http://edmodo.com" data-mode="2" target="_blank" class="edmodo"></a>
+                  <a href="http://codinghouse.co/" data-mode="2" target="_blank" class="codinghouse"></a>
+                  <a href="http://makeschool.com" data-mode="2" target="_blank" class="makeschool"></a>
+                  <a href="http://www.twistbioscience.com/" data-mode="2" target="_blank" class="twist"></a>
+                  <a href="http://leapmotion.com" data-mode="2" target="_blank" class="leapmotion"></a>
+                  <a href="http://rokolabs.com" data-mode="2" target="_blank" class="roko"></a>
+                  <a href="http://www.galvanize.com/" data-mode="2" target="_blank" class="galvanize"></a>
+                  <a href="http://rubiconproject.com" data-mode="2" target="_blank" class="rubicon"></a>
+                  <a href="http://draperuniversity.com" data-mode="2" target="_blank" class="draper"></a>
+                  <a href="http://getbootstrap.com" data-mode="2" target="_blank" class="bootstrap"></a>
+                  <a href="http://www.mbacsi.com/" data-mode="2" target="_blank" class="bde"></a>
+                  <a href="http://coursehero.com" data-mode="2" target="_blank" class="coursehero"></a>
+                  <a href="http://moback.com" data-mode="2" target="_blank" class="moback"></a>
+                  <a href="http://roblox.com" data-mode="2" target="_blank" class="roblox"></a>
+                  <a href="http://particle.io" data-mode="2" target="_blank" class="particle"></a>
+                  <a href="http://emotiv.com" data-mode="2" target="_blank" class="emotiv"></a>
+                  <a href="http://choosemuse.com" data-mode="2" target="_blank" class="muse"></a>
+                  <a href="http://oculus.com" data-mode="2" target="_blank" class="oculus"></a>
+                  <a href="http://alienware.com" data-mode="2" target="_blank" class="alienware"></a>
+                  <a href="https://about.me/" data-mode="2" target="_blank" class="aboutme"></a>
+                  <a href="http://socket.io" data-mode="2" target="_blank" class="socket"></a>
+                  <a href="http://hackster.io" data-mode="2" target="_blank" class="hacksterio"></a>
+                  <a href="http://firebase.com" data-mode="2" target="_blank" class="firebase"></a>
+                  <a href="http://gundb.io" data-mode="2" target="_blank" class="gun"></a>
+                  <a href="http://thalmic.com" data-mode="2" target="_blank" class="thalmiclabs"></a>
+                  <a href="http://redbull.com" data-mode="2" target="_blank" class="redbull"></a>
+                  <a href="http://braintreepayments.com" data-mode="2" target="_blank" class="braintree"></a>
+
+
+            </div>
+            </div>
+                  </section>
+                  <br />
+            
     </div> <!--End of container fluid -->
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>        
-        <script>
-            var newYear = new Date(); 
-            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-            $('#timer').countdown({until: newYear}); 
-            
-    
-        </script>
+        <script src="assets/js/countdown.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('#timer').countdown('2015/10/23', function(event) {
+                $(this).html(event.strftime('%w weeks   %d days   and   %H:%M:%S'));
+            });
+</script>
     
     </body>
 
