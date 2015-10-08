@@ -1,18 +1,39 @@
+/* -------------------- SPLASH PAGE + NAVBAR -------------------- */
+
 .main {
     height: 100%;
     width: 100%;
     background: url("assets/img/Hackathon.jpg");
     background-size: cover;
 }
+
+#helloWorldPeople {
+    width: 50%;
+    height: 130px;
+    margin: 20 auto;
+    background-color: none;
+    opacity: none;
+    font-family: Lato;
+    font-size: 30px;
+    color: white;
+}
             
 .nice {
     background-color: azure;
     height: 75%;
 }
+
+.header img {
+    display: block;
+    width: 300px;
+    height: 120px;
+    margin: auto;
+    padding-top: 175px;
+}
             
 .header {
     background-color: dimgray;
-    opacity: 0.75;
+    opacity: 0.85;
     width: 100%;
     height: 100%;
     z-index: 100;
@@ -25,8 +46,8 @@
     color: white;
     font-weight: bold;
     font-size: 58px;
-    padding-top: 250px;
-    z-index: 0;
+    padding-top: 200px;
+    z-index: -1;
 }
             
 .header h1 span {
@@ -43,39 +64,102 @@
     color: white;
     font-family: Lato;
     text-align: center;
+    margin-top: 0;
 }
 
+/*NAV*/
+
 .nav {
-    position: fixed;
-    width: 100%;
-    height: 38px;
-    text-align: center;
-    background-color: dimgray;
-    opacity: 0.8;
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        position: fixed;
+        z-index: 150;
+        background-color: dimgray;
 }
 
 .nav a {
-    display: block;
-    float: right;
-    margin-right: 40px;
-    text-decoration: none;
+        display: inline-block;
+        margin: 6 auto;
+        padding-right: 60px;
+        text-decoration: none;
+        padding-left: 60px;
 }
 
 .nav a p {
-    padding-top: 6px;
-    color: white;
-    font-family: Avenir;
-    font-size: 16px;
+        font-size: 16px;
+        color: white;
+        font-family: Avenir;
+        text-decoration: none;
+        text-decoration-line: none;
 }
+
+@media(max-width: 800px ) {
+    
+    #helloWorldPeople {
+        font-size: 22px;
+    }
+
+}
+
+@media(max-width: 500px ) {
+    
+    #helloWorldPeople {
+        font-size: 17px;
+    }
+
+}
+
+/* -------------------- INFO SECTION -------------------- */
+
+.info {
+    width: 100%;
+    height: 60%;
+    background-color: #D4D9DB;
+}
+
+.info h2 {
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    font-family: Lato;
+    font-size: 40px;
+}
+
+.info h4 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: Lato;
+    text-align: center;
+}
+
+.info h5 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+}
+
+
             
-/*Schedule Styling*/
+/* -------------------- FOOTER -------------------- */
             
 .schedule {
     width: 100%;
     background-color: #f3f3f3;
-    
 }
-            
+
+.schedule .map {
+    text-decoration: none;
+}
+
+.schedule .map h5 {
+    color: black;
+    font-family: Lato;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
 .schedule h1 {
     padding-top: 25px;
     text-align: center;
@@ -95,12 +179,29 @@
             
 .column1 {
     display: inline-block;
-    width: 49%;
+    width: 33%;
+    height: 50px;
 }
             
 .column2 {
     display: inline-block;
-    width: 49%;    
+    width: 33%;    
+    height: 50px;
+}
+
+.column3 {
+    display: inline-block;
+    width: 33%;
+    height: 50px;
+}
+
+.column3 h5 {
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 300;
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
             
 .column1 h5 {
@@ -108,16 +209,18 @@
     font-size: 18px;
     font-family: Lato;
     font-weight: 300;
-    padding-top: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
             
 .column2 h5 {
-    text-align: right;
+    text-align: left;
     padding-right: 15px;
     font-size: 18px;
     font-family: Lato;
     font-weight: 300;
-    padding-top: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
             
 .event {
@@ -130,7 +233,7 @@
     margin: 0 auto;
 }
             
-/*Transportation*/
+/* -------------------- TRANSPORTATION -------------------- */
             
 .shuttles {
     background-color: #DEE5EA;
@@ -145,11 +248,18 @@
     font-size: 35px;
     letter-spacing: 1px;
 }
+
+.shuttles h2 {
+    text-align: center;
+    font-weight: 200px;
+    font-family: Lato;
+    font-size: 22px;
+}
           
 .shuttles h6 {
     margin-top: 25px;
     text-align: center;
-    color: cadetblue;
+    color: ;
     font-weight: 100;
     font-size: 20px;
     font-family: Avenir;
@@ -168,10 +278,11 @@
     background-color: slategrey;
 }
             
-/*FAQ*/
+/* -------------------- FAQ -------------------- */
             
 .justified{
     text-align: justify;
+    
 }
             
 #nice {
@@ -180,6 +291,7 @@
     display: inline-block;
     width: 30%;
     vertical-align: top;
+    z-index: -2;
 }
             
 .row {
@@ -188,12 +300,14 @@
             
 #faq {
     background-color: #eeeeee;
+    z-index: -10;
 }
 
 #faq h2 {
     font-size: 35px;
     letter-spacing: 1px;
     padding-top: 25px;
+    z-index: -2;
 }
             
 #nice strong {
@@ -208,12 +322,12 @@
     font-size: 14px;
 }
 
-/*Sponsors*/
+/* -------------------- SPONSORS/PARTNERS -------------------- */
 
 #sponsors {
-  background: white;
-  width:   100%;
-  padding: 90px 0;
+    background: white;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -254,35 +368,34 @@
 #sponsors .dolby      { background: url('http://cdn3.hackingedu.co/img/sponsors/dolby.png');              }
 #sponsors .hack4baltimore { background: url('http://cdn2.hackingedu.co/img/sponsors/hack4baltimore.png'); }
 #sponsors .globalcommit   { background: url('http://cdn3.hackingedu.co/img/sponsors/globalcommit.png');   }
-#sponsors .clusterpoint { background: url('../img/sponsors/clusterpoint.png');     }
+#sponsors .clusterpoint { background: url('../public/assets/img/sponsors/clusterpoint.png');     }
 
-#sponsors .coursehero { background: url('../img/sponsors/coursehero.png');     }
-#sponsors .moback { background: url('../img/sponsors/moback.png');     }
-#sponsors .roblox { background: url('../img/sponsors/roblox.png');     }
-#sponsors .braintree { background: url('../img/sponsors/braintree.png');     }
-#sponsors .muse { background: url('../img/sponsors/muse.png');     }
-#sponsors .emotiv { background: url('../img/sponsors/Emotiv.png');     }
-#sponsors .ibmbluemix { background: url('../img/sponsors/ibm_bluemix.png');     }
+#sponsors .coursehero { background: url('../public/assets/img/sponsors/coursehero.png');     }
+#sponsors .moback { background: url('../public/assets/img/sponsors/moback.png');     }
+#sponsors .roblox { background: url('../public/assets/img/sponsors/roblox.png');     }
+#sponsors .braintree { background: url('../public/assets/img/sponsors/braintree.png');     }
+#sponsors .muse { background: url('../public/assets/img/sponsors/muse.png');     }
+#sponsors .emotiv { background: url('../public/assets/img/sponsors/Emotiv.png');     }
+#sponsors .ibmbluemix { background: url('../public/assets/img/sponsors/ibm_bluemix.png');     }
 
-#sponsors .uber { background: url('../img/sponsors/uber.png');     }
-#sponsors .particle { background: url('../img/sponsors/particle.png');     }
-#sponsors .hacksterio { background: url('../img/sponsors/hacksterio.png');     }
-#sponsors .kpcb { background: url('../img/sponsors/kpcb.jpg');     }
-#sponsors .dashdoc { background: url('../img/sponsors/dashdoc.png');     }
-#sponsors .edtechworldtour { background: url('../img/sponsors/edtechworldtour.jpeg');     }
-#sponsors .ostem { background: url('../img/sponsors/ostemlogo.svg');     }
-#sponsors .alienware { background: url('../img/sponsors/alienware.png');     }
+#sponsors .uber { background: url('../public/assets/img/sponsors/uber.png');     }
+#sponsors .particle { background: url('../public/assets/img/sponsors/particle.png');     }
+#sponsors .hacksterio { background: url('../public/assets/img/sponsors/hacksterio.png');     }
+#sponsors .kpcb { background: url('../public/assets/img/sponsors/kpcb.jpg');     }
+#sponsors .dashdoc { background: url('../public/assets/img/sponsors/dashdoc.png');     }
+#sponsors .edtechworldtour { background: url('../public/assets/img/sponsors/edtechworldtour.jpeg');     }
+#sponsors .ostem { background: url('../public/assets/img/sponsors/ostemlogo.svg');     }
+#sponsors .alienware { background: url('../public/assets/img/sponsors/alienware.png');     }
 
-#sponsors .bde { background: url('../img/sponsors/bde.png');     }
-#sponsors .devnetwork { background: url('../img/sponsors/dev_network.png');     }
-#sponsors .femresources { background: url('../img/sponsors/femresources.png');     }
-#sponsors .greenathon { background: url('../img/sponsors/greenathon.png');     }
+#sponsors .bde { background: url('../public/assets/img/sponsors/bde.png'); }
+#sponsors .devnetwork { background: url('../public/assets/img/sponsors/dev_network.png');     }
+#sponsors .femresources { background: url('../public/assets/img/sponsors/femresources.png');     }
+#sponsors .greenathon { background: url('../public/assets/img/sponsors/greenathon.png');     }
 
-#sponsors .nyntech { background: url('../img/sponsors/nyntech.png');     }
-#sponsors .aboutme { background: url('../img/sponsors/aboutme.png');     }
-#sponsors .oculus { background: url('../img/sponsors/oculus.png');     }
-#sponsors .gsvlabs { background: url('../img/sponsors/gsvlabs.png');     }
-#sponsors .capitalone {background: url(assets/img/sponsors/capitalone.png); }
+#sponsors .nyntech { background: url('../public/assets/img/sponsors/nyntech.png');     }
+#sponsors .aboutme { background: url('../public/assets/img/sponsors/aboutme.png');     }
+#sponsors .oculus { background: url('../public/assets/img/sponsors/oculus.png');     }
+#sponsors .gsvlabs { background: url('../public/assets/img/sponsors/gsvlabs.png');     }
 
 
 .tier, .tier a {
@@ -293,7 +406,7 @@
   margin:  0 20px;
   padding: 0;
 
-  box-sizing: border-box;
+  //box-sizing: border-box;
     background-size: contain !important;
     background-position: center center !important;
     background-repeat: no-repeat !important
@@ -301,16 +414,9 @@
 
 .tier {
   width: 100%;
-  //height: 100%;
-  text-align: center;
-}
-
-#sponsors h2 {
-    text-align: center;
 }
 
 .tier a {
-    display: inline-block;
   margin: 20px !important;
 }
 
@@ -339,6 +445,63 @@
   width:       10%;
   height:     90px;
 }
+
+
+
+#partners .tier4 a {
+  z-index: -1;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    width: 100%;
+    height: 30%;
+    background-color: #193148;
+    text-align: center;
+}
+
+footer h3 {
+    padding-top: 15px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: Avenir;
+}
+
+footer .social {
+    display: inline-block;
+    margin: 10 auto;
+    width: 60px;
+    height: 40px;
+    background-color: #193148;
+    vertical-align: top;
+}
+
+footer .socialHolder .social a i {
+    display: block;
+    margin-left: -15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .socialHolder {
+    //background-color: red;
+    text-align: center;
+    height: 60px;
+}
+
+footer a h4 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: Avenir;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/*Media Queries */
             
 @media(max-width: 980px) {
                 
@@ -359,15 +522,69 @@
     .column2 h5 {
         font-size: 15px;
     }
+    
+    .column3 h5 {
+        font-size: 15px;
+    }
+    
+    .nav {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+    }
+
+    .nav a p {
+        font-size: 16px;
+        color: white;
+        font-family: Avenir;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+}
+
+@media(max-width: 740px ) {
+    .nav {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-decoration: none;
+    }
+
+    .nav a p {
+        font-size: 16px;
+        color: white;
+        font-family: Avenir;
+        text-decoration: none;
+        text-decoration-line: none;
+    }
 }
             
 @media(max-width: 600px) {
     .column1 h5 {
-        font-size: 11px;
+        font-size: 13px;
     }
                 
     .column2 h5 {
-        font-size: 11px;
+        font-size: 13px;
+    }
+    
+    .column3 h5 {
+        font-size: 13px;
     }
     
     .nav {
@@ -380,7 +597,8 @@
     .nav a {
         display: inline-block;
         margin: 0 auto;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
         text-decoration: none;
     }
 
@@ -395,15 +613,29 @@
     .header h1 {
         padding-top: 150px;
     }
+    
+    .schedule {
+        //text-align: center;
+    }
+    
+    .awesome {
+        display: inline-block;
+        margin: auto;
+        width: 70%;
+    }
 }
 
 @media (max-width: 520px) {
     .column1 h5 {
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .column2 h5 {
-        font-size: 16px;
+        font-size: 12px;
+    }
+    
+    .column3 h5 {
+        font-size: 11px;
     }
     
     .awesome {
